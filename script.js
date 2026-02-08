@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
     localStorage.setItem("user", JSON.stringify({ username, password }));
     existingBtn.style.display = "block";
   } else {
-    localStorage.removeItem("user");   // ✅ only remove saved credentials
+    localStorage.removeItem("user");   
     existingBtn.style.display = "none";
   }
 });
